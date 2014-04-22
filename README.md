@@ -12,7 +12,7 @@ Instalación:
 la carpeta uploads debe de tener permisos de escritura 777 o 755 al menos es la carpeta en donde se guardan los favicon generados.
 
 Luego  si se controla el panel de su hosting o de su VPS o Dedicado hay que crear un cron para vaciar la carpeta cada xx:xx:xx horas.
-Opcionalmente existe un archivo llamado deleite.php que si lo llamamos desde la url borrará todos los favicon generados.
+Opcionalmente existe un archivo llamado delete.php que si lo llamamos desde la url borrará todos los favicon generados.
 
 EJ: http://misitio.com/delete.php
 
