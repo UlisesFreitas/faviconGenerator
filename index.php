@@ -89,6 +89,11 @@ if(empty($sid)){
 				<span>Añadir</span>
 				<input type="file" name="favicon" id="img-favicon">
 			</span>
+			
+			<select name="size-fav">
+				<option value="32">32px</option>
+				<option value="64">64px</option>
+			</select>
 			</span>
 			
 			<button type="submit" class="btn btn-primary" name="submit" value="1" id="send">

@@ -53,13 +53,18 @@ if(isset($_POST['submit']) && $_POST['submit'] == 1){
 		$parts = explode(".",$i_name);
 		
 		
+		//Added Favicon sizes from $_POST
+		$favicon_size = $_POST['size-fav'];
+		
+		
+		
 		$dir = 'uploads';
 		
 		$final_image_name = $image->SetImageName(time().'.ico');
 		
 		$image->SetImageDir($dir.DIRECTORY_SEPARATOR.$final_image_name);
 				
-		$saved = $image->SaveImage(16, 16 ,$image->GetImageDir());
+		$saved = $image->SaveImage($favicon_size, $favicon_size ,$image->GetImageDir());
 		
 		$sessionhandler->SetSessionVar('favicon',$image->getImageName());
 		
